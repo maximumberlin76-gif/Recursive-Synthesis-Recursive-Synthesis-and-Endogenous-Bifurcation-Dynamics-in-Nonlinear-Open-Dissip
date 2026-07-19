@@ -1,4 +1,4 @@
-cff-version: 1.2.0
+2cff-version: 1.2.0
 message: "If you use this repository, theoretical framework, terminology, theorem structure, or any derived formulation, please cite this work."
 title: "Recursive Synthesis and Endogenous Bifurcation Dynamics Theorem: Recursive Inheritance of Retained Synthesis Cycles of Resonance-Window Phase Transitions Toward a New Level of Structural Self-Organization in Nonlinear Open Dissipative Dynamic Systems"
 authors:
@@ -30,5 +30,6 @@ preferred-citation:
     - family-names: "Marnov"
       given-names: "Maksym"
       alias: "Alchimist"
+      orcid: "https://orcid.org/0009-0000-0832-9597"
   year: 2026
   institution: "Independent Researcher · Philosophy & Systems Architecture"
