@@ -1,0 +1,83 @@
+name: Rename Theorem Image
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rename-image:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Locate and rename uploaded image
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          target="assets/recursive_synthesis_endogenous_bifurcation_dynamics_theorem_EN.png"
+
+          if [[ -f "$target" ]]; then
+            echo "Target file already exists:"
+            echo "$target"
+            exit 0
+          fi
+
+          mapfile -t candidates < <(
+            find assets \
+              -maxdepth 1 \
+              -type f \
+              -name 'file_*' \
+              -print |
+            sort
+          )
+
+          if [[ "${#candidates[@]}" -eq 0 ]]; then
+            echo "ERROR: No automatically named file_* image found in assets/"
+            exit 1
+          fi
+
+          if [[ "${#candidates[@]}" -gt 1 ]]; then
+            echo "ERROR: More than one file_* candidate found:"
+            printf '%s\n' "${candidates[@]}"
+            exit 1
+          fi
+
+          source_file="${candidates[0]}"
+          mime_type="$(file --brief --mime-type "$source_file")"
+
+          echo "Source file: $source_file"
+          echo "Detected MIME type: $mime_type"
+
+          if [[ "$mime_type" != "image/png" ]]; then
+            echo "ERROR: Expected image/png, detected $mime_type"
+            exit 1
+          fi
+
+          git mv -- "$source_file" "$target"
+
+          rm -f assets/.gitkeep
+
+          echo "Renamed to:"
+          echo "$target"
+
+      - name: Commit and push renamed image
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ -z "$(git status --porcelain)" ]]; then
+            echo "No repository changes detected."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          git commit -m "Rename theorem infographic image"
+          git push
