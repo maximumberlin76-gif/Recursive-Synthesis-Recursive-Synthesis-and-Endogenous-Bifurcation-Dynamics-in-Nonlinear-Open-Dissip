@@ -1,5 +1,13 @@
 # Recursive Synthesis and Endogenous Bifurcation Dynamics Theorem
 
+<p align="center">
+  <img
+    src="assets/recursive_synthesis_endogenous_bifurcation_dynamics_theorem_EN.png"
+    alt="Recursive Synthesis and Endogenous Bifurcation Dynamics Theorem infographic"
+    width="100%"
+  />
+</p>
+
 ## Recursive Inheritance of Retained Synthesis Cycles of Resonance-Window Phase Transitions Toward a New Level of Structural Self-Organization in Nonlinear Open Dissipative Dynamic Systems
 
 # Overview
