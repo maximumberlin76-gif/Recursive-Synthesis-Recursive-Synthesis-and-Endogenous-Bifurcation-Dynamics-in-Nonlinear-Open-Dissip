@@ -298,9 +298,21 @@ and the critical delay scaling:
 
 `t_delay ~ v^(−1/2)`
 
-This scaling law follows from the linear ramp balance in the reduced EDC normal form.
+This scaling law is the cubic specialization of the generalized class:
 
-The cubic saturation term determines the associated critical amplitude scale, not the temporal exponent.
+`dC/dt = v_eff t C − gC^n`
+
+For `v_eff > 0`, `g > 0`, and `n > 1`, the exponent balance gives:
+
+`t_delay ~ v_eff^(−1/2)`
+
+`C_critical ~ g^(−1/(n−1)) v_eff^(1/(2(n−1)))`
+
+The temporal exponent is independent of `n`; the amplitude exponent depends on `n`.
+
+For the displayed cubic model, geometric closure through `V_coh,3 ∝ C_x C_y C_z ∝ C³` and symmetry closure through `C → −C` are separate supporting arguments. Neither is part of the temporal exponent proof.
+
+See [Generalized Ramp-Scaling Lemma](../appendix_mathematics_of_dynamics/generalized_ramp_scaling_lemma.md).
 
 # Resonance-Window Accessibility
 

@@ -118,11 +118,13 @@ Operationally this means:
 
 - fast endogenous drift collapses available transition-control time.
 
-This scaling relation applies within the reduced cubic critical regime:
+This temporal scaling is the generalized result for the linear-ramp class:
 
-`dC/dt = vtC − C³`
+`dC/dt = v_eff t C − gC^n`
 
-It must not be interpreted as a universal scaling law outside the stated nonlinear open dissipative dynamic context and its operational assumptions.
+with `v_eff > 0`, `g > 0`, and `n > 1`. The cubic equation is the specialization `n = 3`; its amplitude exponent is `1/4`, while the temporal exponent remains `−1/2`.
+
+Outside the stated linear-ramp dominant balance, the exponent must be re-derived. See [Generalized Ramp-Scaling Lemma](generalized_ramp_scaling_lemma.md).
 
 # Endogenous Structural Coherence Asymptotics
 

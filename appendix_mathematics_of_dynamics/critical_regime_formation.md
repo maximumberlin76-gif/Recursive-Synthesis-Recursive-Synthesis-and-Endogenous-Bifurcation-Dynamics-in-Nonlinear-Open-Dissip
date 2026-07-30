@@ -58,9 +58,11 @@ Within the framework:
 
 - criticality emerges near the operational transition boundary where endogenous structural coherence approaches destabilizing pressure.
 
-The cubic term represents nonlinear saturation.
+In the displayed specialization, the cubic term represents the leading nonlinear saturation and prevents unbounded growth of the reduced coherence variable inside the local critical model.
 
-It prevents unbounded growth of the reduced coherence variable inside the local critical model.
+The saturation order is a model closure. A geometric closure may select `n = d` through `V_coh,d ∝ C^d`; a symmetry closure may select the cubic term when `C → −C` excludes even powers. These arguments are distinct. The temporal ramp exponent remains `−1/2` for every `n > 1` in the linear-ramp class.
+
+See [Generalized Ramp-Scaling Lemma](generalized_ramp_scaling_lemma.md).
 
 # Endogenous Drift Formation
 

@@ -84,6 +84,8 @@ The scaling relation does not define resonance-window compression by itself.
 
 It describes how endogenous drift velocity affects the available delay before critical transition development.
 
+For the generalized linear-ramp class `dC/dt = v_eff t C − gC^n`, the delay exponent remains `−1/2` for every `n > 1`, while the amplitude exponent depends on `n`. See the [Generalized Ramp-Scaling Lemma](../appendix_mathematics_of_dynamics/generalized_ramp_scaling_lemma.md).
+
 # Coherent Accumulation Compression
 
 Near critical operational regimes:

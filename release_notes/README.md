@@ -414,17 +414,21 @@ It does not replace the core stability condition:
 
 `C(t) > P(t)`
 
-The scaling law is valid under the stated local assumptions:
+The generalized scaling law is stated for:
 
-- cubic saturation dominates;
+`dC/dt = v_eff t C − gC^n`
 
-- endogenous drift is locally smooth;
+with `v_eff > 0`, `g > 0`, and `n > 1`.
 
-- r(t) ≈ vt;
+Its exponent balance gives:
 
-- the system remains nonlinear, open, dissipative, and dynamically evolving;
+`t_delay ~ v_eff^(−1/2)`
 
-- higher-order nonlinearities remain subdominant in the analyzed regime.
+`C_critical ~ g^(−1/(n−1)) v_eff^(1/(2(n−1)))`
+
+The cubic repository equations use `n = 3` and therefore amplitude exponent `1/4`. Geometric and symmetry closures supporting `C³` are documented separately from the algebraic scaling proof.
+
+See [Generalized Ramp-Scaling Lemma](../appendix_mathematics_of_dynamics/generalized_ramp_scaling_lemma.md). If the local ramp or dominant balance changes, the exponents must be re-derived.
 
 # Failure Mode
 

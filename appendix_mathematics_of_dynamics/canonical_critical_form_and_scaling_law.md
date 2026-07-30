@@ -88,6 +88,32 @@ gives the canonical critical form:
 
 Operationally this represents the parameter-reduced structure of the local cubic critical regime.
 
+# Generalized Ramp-Scaling Relation
+
+The cubic reduction is a specialization of:
+
+`dC/dt = v_eff t C − gC^n`
+
+with `v_eff > 0`, `g > 0`, and `n > 1`.
+
+The generalized rescaling is:
+
+`t = v_eff^(−1/2)τ`
+
+`C = g^(−1/(n−1)) v_eff^(1/(2(n−1)))y`
+
+which gives:
+
+`dy/dτ = τy − y^n`
+
+and therefore:
+
+`t_delay ~ v_eff^(−1/2)`
+
+`C_critical ~ g^(−1/(n−1)) v_eff^(1/(2(n−1)))`
+
+The temporal exponent does not depend on `n`; the amplitude exponent does. The complete proof and closure conditions are given in the [Generalized Ramp-Scaling Lemma](generalized_ramp_scaling_lemma.md).
+
 # Scaling Law
 
 The characteristic transition delay follows:
@@ -194,25 +220,19 @@ Real dynamic stability over time remains governed by:
 
 # Universality Conditions
 
-This scaling form applies when:
+The temporal exponent `−1/2` applies to the generalized class when:
 
-- nonlinear cubic saturation dominates;
+- the local ramp enters as `v_eff t C`;
 
-- endogenous drift remains locally smooth;
+- `v_eff > 0`;
 
-- the control parameter evolves near criticality;
+- the leading saturation term is `gC^n`, with `g > 0` and `n > 1`;
 
-- the system remains nonlinear, open, dissipative, and dynamically evolving;
+- the single critical-amplitude reduction remains valid over the analyzed interval.
 
-- higher-order nonlinearities remain subdominant within the analyzed local regime.
+The displayed cubic equation is the specialization `n = 3`. Its amplitude exponent is `1/4`, while the temporal exponent remains the generalized value `−1/2`.
 
-Outside these conditions, alternative scaling behavior may emerge.
-
-Therefore:
-
-`t_delay ~ v^(−1/2)`
-
-is the temporal scaling law of the reduced EDC normal form with a linear ramp term. Its application requires the stated local ramp approximation and critical reduction.
+If the ramp is nonlinear in time, several nonlinear terms are co-leading, or additional critical modes alter the dominant balance, the exponents must be re-derived.
 
 # Operational Interpretation
 

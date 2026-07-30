@@ -151,6 +151,36 @@ Operationally:
 
 ---
 
+# Generalized Ramp-Scaling Lemma
+
+For:
+
+`dC/dt = v_eff t C − gC^n`
+
+with `v_eff > 0`, `g > 0`, and `n > 1`, introduce:
+
+`t = v_eff^(−α)τ`
+
+`C = g^(−1/(n−1)) v_eff^β y`
+
+The exponent balance is:
+
+`β + α = 1 − α + β = nβ`
+
+and gives:
+
+`α = 1/2`
+
+`β = 1/(2(n−1))`
+
+Hence:
+
+`t_delay ~ v_eff^(−1/2)`
+
+`C_critical ~ g^(−1/(n−1)) v_eff^(1/(2(n−1)))`
+
+The temporal exponent is independent of the saturation order. The amplitude exponent depends on the saturation order. See the complete [Generalized Ramp-Scaling Lemma](generalized_ramp_scaling_lemma.md).
+
 # Operational Meaning
 
 The scaling law means that the available stabilization time decreases nonlinearly as endogenous drift velocity increases.
@@ -237,21 +267,16 @@ It inherits qualitative characteristics of the current retained or degraded regi
 
 # Universality Domain
 
-This scaling form applies under the following conditions:
+The generalized temporal law applies when:
 
-- cubic saturation dominates nonlinear dynamics;
-- the control parameter evolves smoothly near criticality;
-- endogenous drift can be locally approximated as r(t) ≈ vt;
-- the system remains nonlinear, open, dissipative, and dynamically evolving;
-- higher-order nonlinearities remain subdominant within the analyzed local regime.
+- the local critical ramp is linear in time and enters as `v_eff t C`;
+- `v_eff > 0`;
+- the leading saturation term is `gC^n`, with `g > 0` and `n > 1`;
+- the reduction to one critical amplitude remains valid.
 
-Outside this domain, alternative scaling behavior may arise.
+The cubic equations in this document use `n = 3` and are therefore a specialization of the generalized lemma.
 
-Therefore:
-
-    t_delay ~ v^(−1/2)
-
-is the temporal scaling law of the reduced EDC normal form with a linear ramp term. Its application requires the stated local ramp approximation and critical reduction.
+Outside this domain, including nonlinear ramps, co-leading saturation terms, memory-dominated balances, or multiple critical modes, the exponent balance must be derived again.
 
 ---
 

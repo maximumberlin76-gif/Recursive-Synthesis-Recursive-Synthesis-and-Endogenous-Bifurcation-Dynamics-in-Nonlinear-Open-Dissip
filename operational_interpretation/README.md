@@ -474,9 +474,11 @@ The critical delay scaling is:
 
 `t_delay ~ v^(−1/2)`
 
-This scaling applies to the reduced EDC normal form with a linear ramp term.
+This scaling applies to the generalized linear-ramp normal form `dC/dt = v_eff t C − gC^n` for `v_eff > 0`, `g > 0`, and `n > 1`.
 
-The cubic term controls the critical amplitude scale and does not set the temporal exponent.
+The temporal exponent remains `−1/2` for every saturation order in this class. The saturation order controls the separate amplitude exponent `1/(2(n−1))`; the cubic model gives `1/4`.
+
+See [Generalized Ramp-Scaling Lemma](../appendix_mathematics_of_dynamics/generalized_ramp_scaling_lemma.md).
 
 # Critical Delay
 

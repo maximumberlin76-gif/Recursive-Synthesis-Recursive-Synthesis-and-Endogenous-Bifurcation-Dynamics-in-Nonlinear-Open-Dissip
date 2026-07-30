@@ -346,28 +346,53 @@ Within the framework:
 
 The scaling law therefore represents an operational invariant governing stabilization accessibility near critical regimes in nonlinear open dissipative dynamic systems.
 
-## Cubic Normal-Form Scaling Note
+## Generalized Ramp-Scaling Lemma
 
-For the normalized cubic critical equation:
+For the generalized linear-ramp critical normal form:
 
-`dC/dt = vtC − C³`
+`dC/dt = v_eff t C − gC^n`
 
-the consistent rescaling is:
+with `v_eff > 0`, `g > 0`, and `n > 1`, the parameter-removing rescaling is:
 
-`C = v^(1/4)y  t = v^(−1/2)τ`
+`t = v_eff^(−1/2)τ`
 
-The temporal exponent `−1/2` follows from balancing the time derivative with the linear ramp term. The cubic saturation term determines the critical amplitude scaling:
+`C = g^(−1/(n−1)) v_eff^(1/(2(n−1)))y`
 
-`C_critical ~ v^(1/4)`
+and the reduced equation is:
 
-The cubic term is retained here as a model closure for third-order saturation. Three-dimensional organization alone does not automatically prove the normal form `−C³`; geometric and symmetry-based closures require separate justification.
+`dy/dτ = τy − y^n`
 
-Operationally:
+The exponent balance:
 
-- the linear ramp drives the system toward criticality;
-- cubic saturation limits structural coherence growth;
-- the amplitude scale is `v^(1/4)`;
-- the available critical delay scales as `v^(−1/2)`.
+`β + α = 1 − α + β = nβ`
+
+gives:
+
+`α = 1/2`
+
+`β = 1/(2(n−1))`
+
+Therefore:
+
+`t_critical ~ v_eff^(−1/2)`
+
+`t_delay ~ v_eff^(−1/2)`
+
+while:
+
+`C_critical ~ g^(−1/(n−1)) v_eff^(1/(2(n−1)))`
+
+The temporal exponent is independent of `n` within the linear-ramp class; the amplitude exponent depends on `n`.
+
+For the cubic specialization `n = 3`:
+
+`C_critical ~ g^(−1/2) v_eff^(1/4)`
+
+`t_delay ~ v_eff^(−1/2)`
+
+The cubic term may be supported by a geometric closure `V_coh,3 ∝ C_x C_y C_z ∝ C³` under isotropic reduction, or by a symmetry closure in which `C → −C` excludes even powers. These are separate model arguments. Neither argument changes the temporal exponent.
+
+Full statement and proof: [Generalized Ramp-Scaling Lemma](appendix_mathematics_of_dynamics/generalized_ramp_scaling_lemma.md).
 
 # Invariant I — Accumulated Positive Structural Work
 

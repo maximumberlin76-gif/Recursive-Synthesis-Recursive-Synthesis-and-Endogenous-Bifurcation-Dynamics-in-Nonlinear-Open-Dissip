@@ -66,6 +66,8 @@ where:
 
 - Relation to EDS / EDC stability criteria
 
+- Generalized ramp-scaling lemma and cubic specialization
+
 ## Mathematical Scope
 
 The appendix treats mathematical structures as local and operational models of dynamic accessibility.
@@ -88,9 +90,11 @@ and to the delay scaling law:
 
 `t_delay ~ v^(−1/2)`
 
-For the normalized cubic normal form with a linear ramp term, this is the inverse-square-root temporal scaling.
+For the generalized class `dC/dt = v_eff t C − gC^n`, with `v_eff > 0`, `g > 0`, and `n > 1`, the temporal scaling remains `v_eff^(−1/2)`, while the amplitude scaling is `g^(−1/(n−1)) v_eff^(1/(2(n−1)))`.
 
-Its validity is tied to the stated linear-ramp critical reduction; the cubic term controls the corresponding amplitude scale.
+The cubic equation is the specialization `n = 3`. Geometric and symmetry closures used to select `C³` are distinct from the algebraic exponent-balance proof.
+
+See [Generalized Ramp-Scaling Lemma](generalized_ramp_scaling_lemma.md).
 
 ## Oscillatory Dynamics Note
 

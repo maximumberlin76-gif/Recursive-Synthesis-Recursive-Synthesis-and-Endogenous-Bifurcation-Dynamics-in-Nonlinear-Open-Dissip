@@ -196,13 +196,17 @@ Therefore:
 
 - recursive imbalance accumulation amplifies future instability formation.
 
-This scaling relation applies within the reduced cubic critical regime:
+The same temporal exponent follows for the generalized linear-ramp class:
 
-`dC/dt = vtC − C³`
+`dC/dt = v_eff t C − gC^n`
 
-It must not be interpreted as an unrestricted universal law for every possible nonlinear system.
+with `v_eff > 0`, `g > 0`, and `n > 1`:
 
-Outside the reduced cubic EDC regime, alternative scaling behavior may emerge.
+`t_delay ~ v_eff^(−1/2)`
+
+The saturation order controls the separate amplitude law `C_critical ~ g^(−1/(n−1)) v_eff^(1/(2(n−1)))`. The displayed cubic regime is the specialization `n = 3`.
+
+Outside the stated linear-ramp dominant balance, the exponent must be re-derived. See [Generalized Ramp-Scaling Lemma](generalized_ramp_scaling_lemma.md).
 
 # Operational Interpretation
 

@@ -346,7 +346,15 @@ Core topics include:
 
 - canonical critical scaling;
 
+- generalized ramp-scaling lemma;
+
 - fragmentation dynamics.
+
+The formal generalized scaling proof is located at:
+
+`appendix_mathematics_of_dynamics/generalized_ramp_scaling_lemma.md`
+
+It proves the universal temporal exponent `−1/2` for the linear-ramp class `dC/dt = v_eff t C − gC^n`, derives the `n`-dependent amplitude exponent, and separates geometric closure from symmetry closure.
 
 The mathematical layer supports the theorem.
 

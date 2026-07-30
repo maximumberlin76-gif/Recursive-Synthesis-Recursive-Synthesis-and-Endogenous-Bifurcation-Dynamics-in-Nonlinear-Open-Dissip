@@ -614,9 +614,19 @@ where:
 
 - v — endogenous drift velocity.
 
-The temporal exponent is fixed by the linear ramp balance; the cubic term determines the corresponding amplitude scale.
+More generally, for:
 
-It is not an unrestricted universal law for every nonlinear system.
+`dC/dt = v_eff t C − gC^n`
+
+with `v_eff > 0`, `g > 0`, and `n > 1`:
+
+`t_delay ~ v_eff^(−1/2)`
+
+`C_critical ~ g^(−1/(n−1)) v_eff^(1/(2(n−1)))`
+
+The temporal exponent is fixed by the linear ramp balance and is independent of `n`; the amplitude exponent depends on `n`. The cubic model is the specialization `n = 3`.
+
+See [Generalized Ramp-Scaling Lemma](../appendix_mathematics_of_dynamics/generalized_ramp_scaling_lemma.md). Outside the stated normal-form class, the exponent balance must be re-derived.
 
 # Recursive Inheritance
 

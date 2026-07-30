@@ -234,9 +234,9 @@ As endogenous drift velocity increases:
 
 - operational flexibility decreases.
 
-This scaling relation applies within the reduced cubic critical regime.
+This temporal scaling extends to the generalized linear-ramp class `dC/dt = v_eff t C − gC^n` for every `n > 1`; the saturation order changes the amplitude scale, not the `−1/2` delay exponent.
 
-It describes compression of stabilization accessibility as drift accelerates.
+It describes compression of stabilization accessibility as drift accelerates. See [Generalized Ramp-Scaling Lemma](generalized_ramp_scaling_lemma.md).
 
 It does not replace the core failure condition:
 
