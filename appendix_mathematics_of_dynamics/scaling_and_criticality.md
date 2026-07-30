@@ -64,25 +64,25 @@ Operationally:
 
 Introduce dimensionless variables:
 
-    C = v^(1/3)y
+    C = v^(1/4)y
 
-    t = v^(−1/3)τ
+    t = v^(−1/2)τ
 
 Then:
 
-    dC/dt = v^(2/3) dy/dτ
+    dC/dt = v^(3/4) dy/dτ
 
 and:
 
-    vtC − C³ = v^(2/3)(τy − y³)
+    vtC − C³ = v^(3/4)(τy − y³)
 
 Therefore:
 
-    v^(2/3) dy/dτ = v^(2/3)(τy − y³)
+    v^(3/4) dy/dτ = v^(3/4)(τy − y³)
 
 Dividing by:
 
-    v^(2/3)
+    v^(3/4)
 
 gives:
 
@@ -96,7 +96,7 @@ This is the canonical parameter-reduced form of the critical regime.
 
 The characteristic transition delay follows:
 
-    t_delay ~ v^(−1/3)
+    t_delay ~ v^(−1/2)
 
 Since:
 
@@ -104,23 +104,19 @@ Since:
 
 the delay scaling can also be written as:
 
-    t_delay ~ (μP)^(−1/3)
+    t_delay ~ (μP)^(−1/2)
 
-The exponent:
+The temporal exponent:
 
-    −1/3
+    −1/2
 
-emerges from the cubic saturation structure and the smooth endogenous drift approximation.
-
-It is not inserted as an external assumption.
+follows from balancing the time derivative with the linear ramp term. In the normalized cubic case, saturation determines the separate amplitude exponent `1/4`.
 
 ---
 
-# Why the Scaling Is Cubic
+# Cubic Saturation and Temporal Scaling
 
-The cubic scaling is not introduced as an arbitrary exponent.
-
-Within the reduced critical regime, the dynamics are written as:
+Within the reduced critical regime, the normalized dynamics are written as:
 
 `dC/dt = vtC − C³`
 
@@ -128,7 +124,7 @@ The term:
 
 `vtC`
 
-represents linear drift-driven growth of the endogenous structural coherence variable near the critical regime.
+represents linear ramp-driven growth of the endogenous structural coherence variable near the critical regime.
 
 The term:
 
@@ -136,32 +132,22 @@ The term:
 
 represents nonlinear saturation of structural coherence growth.
 
-The cubic term is used because retained structural stability is treated as a volumetric third-order stabilization problem, not as a purely linear or quadratic correction.
+The consistent cubic rescaling separates two exponents:
 
-A quadratic correction would describe pairwise or surface-like nonlinear limitation.
+`C_critical ~ v^(1/4)`
 
-The cubic term represents third-order structural saturation, where coherence growth becomes limited by volumetric constraint, internal compatibility, and nonlinear self-interaction of the retained regime.
+`t_delay ~ v^(−1/2)`
 
-Therefore, the delay scaling:
+The temporal exponent is fixed by the linear ramp balance. The cubic saturation term fixes the amplitude exponent in this normalized model.
 
-`t_delay ~ v^(−1/3)`
-
-follows from the cubic saturation structure of the reduced critical dynamics.
+The cubic term is a model closure for third-order saturation. A geometric closure based on volumetric coherence and a symmetry closure based on the transformation `C → −C` are distinct arguments and must not be conflated. Three-dimensionality alone does not automatically prove the normal form `−C³`.
 
 Operationally:
 
-- linear drift drives the system toward criticality;
+- linear ramp dynamics drive the system toward criticality;
 - cubic saturation limits structural coherence growth;
-- three-dimensional retained structural organization requires third-order nonlinear stabilization;
-- the available stabilization time scales as the inverse cubic root of endogenous drift velocity.
-
-The exponent:
-
-`−1/3`
-
-is therefore not inserted as an external assumption.
-
-It follows from the cubic nonlinear saturation term governing the reduced EDC regime.
+- the critical amplitude scales as `v^(1/4)`;
+- the available stabilization time scales as the inverse square root of endogenous drift velocity.
 
 ---
 
@@ -263,11 +249,9 @@ Outside this domain, alternative scaling behavior may arise.
 
 Therefore:
 
-    t_delay ~ v^(−1/3)
+    t_delay ~ v^(−1/2)
 
-is a scaling law of the reduced cubic EDC regime,
-
-not an unrestricted universal law for every possible nonlinear system.
+is the temporal scaling law of the reduced EDC normal form with a linear ramp term. Its application requires the stated local ramp approximation and critical reduction.
 
 ---
 
@@ -318,7 +302,7 @@ The scaling law explains why delayed correction becomes increasingly costly near
 
 As endogenous drift accelerates, the available operational window for stabilization compresses according to:
 
-    t_delay ~ v^(−1/3)
+    t_delay ~ v^(−1/2)
 
 The retained synthesis outcome still depends on whether endogenous structural coherence remains stronger than destabilizing pressure:
 

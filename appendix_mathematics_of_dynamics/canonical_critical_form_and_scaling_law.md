@@ -62,25 +62,25 @@ Operationally:
 
 Introduce rescaled variables:
 
-`C = v^(1/3)y`
+`C = v^(1/4)y`
 
-`t = v^(−1/3)τ`
+`t = v^(−1/2)τ`
 
 Then:
 
-`dC/dt = v^(2/3) dy/dτ`
+`dC/dt = v^(3/4) dy/dτ`
 
 and:
 
-`vtC − C³ = v^(2/3)(τy − y³)`
+`vtC − C³ = v^(3/4)(τy − y³)`
 
 Therefore:
 
-`v^(2/3) dy/dτ = v^(2/3)(τy − y³)`
+`v^(3/4) dy/dτ = v^(3/4)(τy − y³)`
 
 Dividing by:
 
-`v^(2/3)`
+`v^(3/4)`
 
 gives the canonical critical form:
 
@@ -92,7 +92,7 @@ Operationally this represents the parameter-reduced structure of the local cubic
 
 The characteristic transition delay follows:
 
-`t_delay ~ v^(−1/3)`
+`t_delay ~ v^(−1/2)`
 
 Operationally this means:
 
@@ -100,13 +100,11 @@ Operationally this means:
 
 - decreasing drift velocity increases adaptive stabilization accessibility.
 
-The exponent:
+The temporal exponent:
 
-`−1/3`
+`−1/2`
 
-emerges from the cubic saturation structure and the smooth endogenous drift approximation.
-
-It is not inserted as an external assumption.
+follows from the balance between the time derivative and the linear ramp term. The cubic saturation term determines the corresponding amplitude exponent `1/4` in the normalized cubic case.
 
 # Structural Interpretation
 
@@ -212,11 +210,9 @@ Outside these conditions, alternative scaling behavior may emerge.
 
 Therefore:
 
-`t_delay ~ v^(−1/3)`
+`t_delay ~ v^(−1/2)`
 
-is a scaling law of the reduced cubic EDC regime,
-
-not an unrestricted universal law for every possible nonlinear system.
+is the temporal scaling law of the reduced EDC normal form with a linear ramp term. Its application requires the stated local ramp approximation and critical reduction.
 
 # Operational Interpretation
 
@@ -236,7 +232,7 @@ The scaling law explains why delayed correction becomes increasingly costly near
 
 As endogenous drift accelerates, the available operational window for stabilization compresses according to:
 
-`t_delay ~ v^(−1/3)`
+`t_delay ~ v^(−1/2)`
 
 The retained synthesis outcome still depends on whether endogenous structural coherence remains stronger than destabilizing pressure:
 

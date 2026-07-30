@@ -384,15 +384,15 @@ The current canonical version includes the following corrections:
 
 10. The delay scaling law:
 
-`t_delay ~ v^(−1/3)`
+`t_delay ~ v^(−1/2)`
 
-applies within the reduced cubic EDC regime and must not be universalized outside its operational assumptions.
+applies to the reduced EDC normal form with a linear ramp term and requires the stated critical approximation.
 
 # Scaling Law Status
 
 The current scaling law is:
 
-`t_delay ~ v^(−1/3)`
+`t_delay ~ v^(−1/2)`
 
 where:
 
@@ -406,9 +406,9 @@ When:
 
 the scaling may be written as:
 
-`t_delay ~ (μP)^(−1/3)`
+`t_delay ~ (μP)^(−1/2)`
 
-This law describes compression of stabilization accessibility near the reduced cubic critical regime.
+This law describes inverse-square-root compression of stabilization accessibility near the reduced linear-ramp critical regime.
 
 It does not replace the core stability condition:
 
@@ -574,7 +574,7 @@ Do not replace formal structural existence with real dynamic stability.
 
 Do not replace retention with externally forced organization.
 
-Do not universalize the −1/3 scaling law beyond the reduced cubic EDC regime.
+Do not apply the −1/2 temporal scaling outside the stated linear-ramp critical normal form without re-deriving the exponent balance.
 
 Do not treat resonance as automatically constructive.
 

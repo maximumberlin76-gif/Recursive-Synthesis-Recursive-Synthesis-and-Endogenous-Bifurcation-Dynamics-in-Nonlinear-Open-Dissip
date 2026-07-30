@@ -296,11 +296,11 @@ This gives:
 
 and the critical delay scaling:
 
-`t_delay ~ v^(−1/3)`
+`t_delay ~ v^(−1/2)`
 
-This scaling law applies within the reduced cubic EDC regime.
+This scaling law follows from the linear ramp balance in the reduced EDC normal form.
 
-It must not be interpreted as an unrestricted universal law outside the stated operational assumptions.
+The cubic saturation term determines the associated critical amplitude scale, not the temporal exponent.
 
 # Resonance-Window Accessibility
 

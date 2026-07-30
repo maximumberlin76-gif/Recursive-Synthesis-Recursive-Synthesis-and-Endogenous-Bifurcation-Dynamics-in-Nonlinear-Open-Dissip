@@ -72,7 +72,7 @@ Operationally this means:
 
 Resonance compression remains dynamically linked to:
 
-`t_delay ~ v^(−1/3)`
+`t_delay ~ v^(−1/2)`
 
 Operationally this means:
 

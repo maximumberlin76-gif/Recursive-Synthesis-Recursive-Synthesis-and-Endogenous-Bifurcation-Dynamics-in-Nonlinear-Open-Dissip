@@ -224,7 +224,7 @@ retention failure becomes operationally accessible.
 
 Fragmentation accessibility remains linked to scaling dynamics:
 
-`t_delay ~ v^(−1/3)`
+`t_delay ~ v^(−1/2)`
 
 As endogenous drift velocity increases:
 

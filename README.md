@@ -299,7 +299,7 @@ Critical regime:
 
 After rescaling:
 
-`C = v^(1/3)y  t = v^(−1/3)τ`
+`C = v^(1/4)y  t = v^(−1/2)τ`
 
 the system reduces to:
 
@@ -307,7 +307,7 @@ the system reduces to:
 
 Delay scaling:
 
-`t_delay ~ v^(−1/3)`
+`t_delay ~ v^(−1/2)`
 
 # Canonical Critical Form and Scaling Law
 
@@ -317,7 +317,7 @@ Near the critical regime:
 
 Introduce rescaling:
 
-`C = v^(1/3)y  t = v^(−1/3)τ`
+`C = v^(1/4)y  t = v^(−1/2)τ`
 
 The system reduces to the canonical critical form:
 
@@ -325,7 +325,7 @@ The system reduces to the canonical critical form:
 
 This produces the characteristic delay scaling law:
 
-`t_delay ~ v^(−1/3)`
+`t_delay ~ v^(−1/2)`
 
 where:
 
@@ -346,25 +346,28 @@ Within the framework:
 
 The scaling law therefore represents an operational invariant governing stabilization accessibility near critical regimes in nonlinear open dissipative dynamic systems.
 
-## Cubic Scaling Note
+## Cubic Normal-Form Scaling Note
 
-The exponent `−1/3` follows from the cubic nonlinear saturation term in the reduced critical regime:
+For the normalized cubic critical equation:
 
 `dC/dt = vtC − C³`
 
-The cubic term is used because retained structural stability is treated as a volumetric third-order stabilization problem, not as a purely linear or quadratic correction.
+the consistent rescaling is:
+
+`C = v^(1/4)y  t = v^(−1/2)τ`
+
+The temporal exponent `−1/2` follows from balancing the time derivative with the linear ramp term. The cubic saturation term determines the critical amplitude scaling:
+
+`C_critical ~ v^(1/4)`
+
+The cubic term is retained here as a model closure for third-order saturation. Three-dimensional organization alone does not automatically prove the normal form `−C³`; geometric and symmetry-based closures require separate justification.
 
 Operationally:
 
-- linear drift drives the system toward criticality;
+- the linear ramp drives the system toward criticality;
 - cubic saturation limits structural coherence growth;
-- three-dimensional retained structural organization requires third-order nonlinear stabilization.
-
-Therefore:
-
-`t_delay ~ v^(−1/3)`
-
-is not an arbitrary scaling choice, but follows from the cubic saturation structure of the reduced EDC regime.
+- the amplitude scale is `v^(1/4)`;
+- the available critical delay scales as `v^(−1/2)`.
 
 # Invariant I — Accumulated Positive Structural Work
 

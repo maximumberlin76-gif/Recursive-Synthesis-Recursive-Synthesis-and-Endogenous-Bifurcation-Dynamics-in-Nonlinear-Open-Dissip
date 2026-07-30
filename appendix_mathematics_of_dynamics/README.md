@@ -86,11 +86,11 @@ leads to the canonical critical form:
 
 and to the delay scaling law:
 
-`t_delay ~ v^(−1/3)`
+`t_delay ~ v^(−1/2)`
 
-This scaling law applies within the reduced cubic critical regime.
+For the normalized cubic normal form with a linear ramp term, this is the inverse-square-root temporal scaling.
 
-It must not be interpreted as a universal law outside the stated nonlinear dissipative dynamic context.
+Its validity is tied to the stated linear-ramp critical reduction; the cubic term controls the corresponding amplitude scale.
 
 ## Oscillatory Dynamics Note
 

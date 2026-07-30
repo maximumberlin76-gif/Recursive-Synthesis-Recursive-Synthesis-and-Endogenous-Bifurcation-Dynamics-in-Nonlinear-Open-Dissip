@@ -90,7 +90,7 @@ Within this regime:
 
 From the scaling law:
 
-`t_delay ~ v^(−1/3)`
+`t_delay ~ v^(−1/2)`
 
 it follows that:
 

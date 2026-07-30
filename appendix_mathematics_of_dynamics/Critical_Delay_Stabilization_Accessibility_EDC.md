@@ -19,7 +19,7 @@ where:
 
 the system develops a characteristic transition delay:
 
-    t_delay ~ v^(−1/3)
+    t_delay ~ v^(−1/2)
 
 where:
 
@@ -88,11 +88,11 @@ Operationally this means:
 
 The scaling law:
 
-    t_delay ~ v^(−1/3)
+    t_delay ~ v^(−1/2)
 
 means that increasing drift velocity does not reduce stabilization time linearly.
 
-It compresses the available stabilization interval according to the cubic critical scaling regime.
+It compresses the available stabilization interval according to the inverse-square-root critical ramp scaling.
 
 ---
 
@@ -147,7 +147,7 @@ It inherits qualitative characteristics of the prior regime, including:
 
 Critical delay directly follows from:
 
-    t_delay ~ v^(−1/3)
+    t_delay ~ v^(−1/2)
 
 Therefore:
 

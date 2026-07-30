@@ -606,15 +606,15 @@ This reduced variable models local critical coherence dynamics.
 
 Critical delay describes the remaining operational interval before bifurcation-accessible transition dynamics become dominant.
 
-In the reduced cubic EDC regime:
+For the reduced EDC normal form with a linear ramp term:
 
-`t_delay ~ v^(−1/3)`
+`t_delay ~ v^(−1/2)`
 
 where:
 
 - v — endogenous drift velocity.
 
-The scaling law applies within the reduced cubic critical regime.
+The temporal exponent is fixed by the linear ramp balance; the cubic term determines the corresponding amplitude scale.
 
 It is not an unrestricted universal law for every nonlinear system.
 

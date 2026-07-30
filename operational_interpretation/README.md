@@ -472,11 +472,11 @@ and:
 
 The critical delay scaling is:
 
-`t_delay ~ v^(−1/3)`
+`t_delay ~ v^(−1/2)`
 
-This scaling applies within the reduced cubic EDC regime.
+This scaling applies to the reduced EDC normal form with a linear ramp term.
 
-It is not an unrestricted universal law for every nonlinear system.
+The cubic term controls the critical amplitude scale and does not set the temporal exponent.
 
 # Critical Delay
 
